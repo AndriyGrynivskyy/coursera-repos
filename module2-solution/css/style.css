@@ -1,1 +1,51 @@
+h2{
+  text-align: center;
+}
 
+*{
+  margin: 1%;
+
+}
+
+.container-1 div{
+
+  border: 1px solid black;
+  background-color: #8ab3cc;
+
+}
+
+.container-1 h3{
+  text-align: right;
+  border: 1px solid black;
+  float: right;
+    width: 75px;
+    padding: 7px;
+    margin: -1px;
+}
+.col1{
+background-color: #3c00ff;
+}
+.col2{
+background-color: #ff00db;
+}
+.col3{
+background-color: #ff0000;
+}
+
+
+@media (min-width:768px) {
+  .container-1{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-around;
+
+  }
+}
+@media (min-width: 768px) and (max-width: 991px){
+  .container-1{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(350px, 1fr));
+  }
+}
+}
